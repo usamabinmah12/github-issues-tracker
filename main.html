@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: "Geist", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F8FAFC]">
+    <nav>
+        <div class="navbar bg-base-100 shadow-sm flex justify-between">
+            <div class="flex items-center">
+                <img src="./assets/github-logo.png" alt="">
+                <a class="btn btn-ghost text-xl">GitHub Issues Tracker</a>
+            </div>
+            <div class="flex gap-2">
+                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+                <button class="btn btn-primary"> + New Isuess </button>
+            </div>
+        </div>
+    </nav>
+    <section class="w-7/12 flex  justify-start">
+        
+           <div class="bg-white p-6">
+            <button  onclick="showEverything()" class="btn btn-primary btn-outline">All</button>
+            <button onclick="showOpen()" class="btn btn-primary btn-outline">Open</button>
+            <button onclick="showClosed()" class="btn btn-primary btn-outline">Closed</button>
+       
+        </div>
+        
+        
+    </section>
+    <section>
+        <div class="flex justify-between">
+            <div class="flex items-center gap-2">
+                <img src="./assets/Aperture.png" alt="">
+                <div class="">
+                    <p id="" class="text-2xl font-bold"><span id="count">50</span> Issues</p>
+                    <p class="text-[#64748B]">Track and manage your project issues</p>
+                </div>
+            </div>
+            <div class="flex gap-3">
+                <h1><span class="bg-green-600 w-[1px] text-green-600 rounded-[25px]">laa</span>   Open</h1>
+                <h2><span class="bg-blue-600 w-[1px] text-blue-600 rounded-[25px]">laa</span> Closed</h2>
+            </div>
+        </div>
+    </section>
+    <section id="cards-btn" class="cards grid  grid-cols-4 gap-3 m-2 bg-amber-100 ">
+        
+      
+    <!-- {
+  "status": "success",
+  "message": "Issue fetched successfully",
+  "data": {
+    "id": 33,
+    "title": "Add bulk operations support",
+    "description": "Allow users to perform bulk actions like delete, update status on multiple items at once.",
+    "status": "open",
+    "labels": [
+      "enhancement"
+    ],
+    "priority": "low",
+    "author": "bulk_barry",
+    "assignee": "",
+    "createdAt": "2024-02-02T10:00:00Z",
+    "updatedAt": "2024-02-02T10:00:00Z"
+  }
+} -->
+            
+        
+    </section>
+    <search>
+       
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+        
+        </dialog>
+    </search>
+    <script src="./script/script.js"></script>
+
+</body>
+
+</html>
