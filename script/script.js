@@ -89,7 +89,7 @@ const  showIndiWord=(data)=>  {
                 </div>
             </div>
             <p class="text-[#64748B]">
-                The navigation menu doesn't collapse properly on mobile devices. Need to fix the responsive behavior.
+                ${data.description}
             </p>
             <div class="flex justify-around">
                 <div class="">
